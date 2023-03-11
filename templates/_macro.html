@@ -14,7 +14,7 @@
 {% macro render_field(field, i) %}
 <div class="control-group">
     <div class="controls">
-        {{ field.label(text="Campo {}:".format(i)) }}
+        {{ field.label(text="{}:".format(i)) }}
         {{field(**kwargs)|safe}}
     </div>
 </div>
